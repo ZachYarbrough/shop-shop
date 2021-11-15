@@ -1,4 +1,3 @@
-import React from 'react';
 import { useQuery } from '@apollo/client';
 import React, { useEffect } from 'react';
 
@@ -35,7 +34,7 @@ function ProductList() {
   return (
     <div className="my-2">
       <h2>Our Products:</h2>
-      {products.length ? (
+      {state.products.length ? (
         <div className="flex-row">
           {filterProducts().map((product) => (
             <ProductItem
